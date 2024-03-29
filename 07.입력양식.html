@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+
+
+
+
+
+    -->
+
+
+    login.html?id=abcd&pw=1234
+        login.html : 요청 주소
+        get 방식일 때 쿼리스트링에 데이터가 첨부됨
+            ? 이후 : 쿼리스트링
+        id, pw : input 태그의 name 속성
+
+        서버에 값을 넘기고 싶을 때는
+        form을 생성하고 form 안에 입력 요소를 만들어 주어야 해요!!
+        - get 방식으로 데이터를 전달할 경우 주소 표시줄 데이터가 표시됨
+        http://127.0.0.1:5500/01/login.html?id=abcd&pw=1234
+        id=abc
+        input 태그가 가지고 있는 속성
+        name 속성의 값= value 속성의 값
+        -get 방식을 데이터를 조회할 때 주로 이용됨
+
+        입력/수정/삭제/로그인 등 데이터를 숨겨서 전달해야 할 경우는 post 방식을 사용
+            name 속성이 없으면 서버에 값을 넘기지 않아요
+    <form action="login.html" method="get">
+        id: <input type="text" name="id" value="dotori"
+            placeholder="아이디를 입력해 주세요"><br>
+        pw: <input type="text" name="pw"
+            placeholder="비밀번호를 입력해 주세요"><br>
+        <input type="text" id="content"><br>
+        <input type="text"><br>
+        <button>로그인</button>
+        <button type="reset">초기화</button>
+        <!--서브밋 버튼: 서버에 특정 페이지를 요청
+                        form 태그의 action 속성에 입력된 페이지를 요청
+                        form 태그 안의 입력 요소의 정보를 서버에 넘김
+                        name 속성의 값 = value 속성의 값-->
+        <button type="reset">테스트</button>
+        <!--버튼-->
+        <button type="button">서브밋 버튼</button>
+        <input type="button" value="버튼">
+    </form>
+    <h1> 두 번째 폼</h1>
+    <!-- method 속성은 기본 get 방식 -->
+    <form action="login.html">
+        검색할 내용 :
+        <!-- 페이지가 열리면 커서 입력-->
+        <input type="text" name="search" value="검색어" autofocus><br>
+        <!-- 필수 입력 체크 : submit 버튼 눌렀을 떄 필수 체크-->
+        이메일 : <input type="text" name="email" required><br>
+        <!-- 수정 불가 -->
+        이름 : <input type="text" value="dotori" readonly>
+        <button>입력</button>
+    </form>
+<h1>세 번째 폼</h1>
+<fieldset>
+    <legend>배송 정보</legend>
+    <label>수령인 : <input type="text" name="" id=""></label><br>
+    <label for="addr">주소 : </label>
+    주소 : <input type="text">
+</fieldset>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

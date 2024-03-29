@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주문하기</title>
+    <style>
+        label {
+
+            width:100;
+            float:left;
+        }
+    </style>
+</head>
+<body>
+    <h1>주문하기</h1>
+    <form action="login.html"></form>
+    <p><label for="name">고객명 :</label> <input type="text" name="name" id="name"></p>
+    <p><label for="">전화번호 :</label> <input type="text" name="tel"></p>
+    <p></label for="">이메일 :<label> </label><input type="text" name="email"></p>
+
+    <fieldset>
+        <legend>피자 사이즈</legend>
+        <input type="radio" name="size" value="S"> Small <br><br>
+        <input type="radio" name="size" value="M" checked> Medium <br><br>
+        <input type="radio" name="size" value="L"> Large
+    </fieldset>
+    <fieldset>
+        <legend>토핑 선택</legend>
+        <input type="checkbox" name="topping" value="v" checked>베이컨 <br><br>
+        <input type="checkbox" name="topping" value="c">치즈 <br><br>
+        <input type="checkbox" name="topping" value="o">양파 <br><br>
+        <input type="checkbox" name="topping" value="m">버섯 <br><br>
+    </fieldset>
+
+    <p>희망 배송 시간 : <input type="time" name="time"></p>
+    <p>배송 시 요청 사항 : 
+        <textarea name="" id="" cols="30 " rows="30" placeholder="힌트"></textarea>
+    </p>
+    </form>
+    </li>
+        피자 사이즈
+        <ul>
+            <li>
+                <input type="radio" name="radio1" id=""> Small
+            </li>
+            <li>
+                <input type="radio" name="radio1" id=""> Medium
+            </li>
+            <li>
+                <input type="radio" name="radio1" id=""> Large
+            </li>
+        </ul>
+            토핑 선택
+        <ul>
+            <li>
+                <input type="radio" name="radio1" id=""> 베이컨
+            </li>
+            <li>
+                <input type="radio" name="radio1" id=""> 치즈
+            </li>  
+            <li>
+                <input type="radio" name="radio1" id=""> 양파
+            </li>
+            <li>
+                <input type="radio" name="radio1" id=""> 버섯
+            </li>
+            <hr>
+            희망 배송 시간 :<input type="text" placeholder="-- --:--   ">
+            <hr>
+            배송 시 요청사항 : <input type="text">
+
+
+
+            </li>
+        </ul>
+</body>
+</html>

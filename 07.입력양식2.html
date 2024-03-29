@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>텍스트와 관련된 input 태그</h1>
+    <form action="login.html">
+        <ul>
+            <li>
+                아이디 : <input type="text" size="5" maxlength="10" required
+                placeholder="아이디를 입력해 주세요" value="dotori">
+            </li>
+            <li>
+                비밀번호 : <input type="password"
+                        placeholder="비밀번호를 입력해 주세요">
+            </li>
+            <li>
+                이메일 : <input type="email">
+            </li>
+            <li>
+                <!-- submit 될 때 http:// 또는 https://가 있는지 체크-->
+                홈페이지 : <input type="url" value="http://" placeholder="홈페이지를 입력해 주세요">
+            </li>
+            <li>
+                검색: <input type="search" >
+            </li>
+            <li>색상 : 
+                <input type="text" list="datalist">
+                <!-- 리스트 목록을 정의-->
+                <datalist id="datalist">
+                <option value="black">검정색</option>
+                <option value="black">흰색</option>
+                <option value="black">하늘색</option>
+            </datalist>
+            <input type="color">
+            </li>
+
+
+            <button>회원가입</button>
+        </ul>
+
+    <h1>숫자와 관련된 태그</h1>
+        <ul>
+            <li>
+                <input type="number" value="0" max="100" step="10">
+            </li>
+            <li>
+                <input type="range" value="30" min="0" max="100" step="10">
+            </li>
+        </ul>
+
+    <h2>날짜/시간 관련 태그들</h2>
+    <!-- date, month, week, time, datetime_local-->
+    <ul>
+        <li>
+            <input type="date" value="2023-05-09">
+        </li>
+    <li>
+        <input type="month" value="2023-05">
+    </li>
+    <li>
+        <input type="time" value="10:42">
+    </li>
+    <li>
+        <input type="datetime-local">
+    </li>
+    <li>
+        <input type="week" name="" id="">
+    </li>
+    </ul>
+    <form>
+    <h1>라디오 버튼과 체크 박스</h1>
+    <ul>
+        <fieldset>
+            <legend>성별</legend>
+            <!-- 여러 항목 중 하나를 선택 -->
+            <!-- 항목을 묶어주기 위해서 name 속성을 똑같이 지정합니다-->    
+            <!-- 서버에 전달되는 값은 선택된 요소의 value 값이다-->        
+            <input type="radio" name="gender" value="m">남 checked>남
+            <input type="radio" name="gender" value="f">여 checked>여
+
+            <input type="radio" name="" value="">기혼
+            <input type="radio" name="" value="">미혼
+        </fieldset>
+        <fieldset>
+        </form>
+            <legend>취미</legend>
+            <input type="checkbox" name="hobby" id="baseball"> 야구
+            <input type="checkbox" name="hobby" id="football"> 축구
+            <input type="checkbox" name="hobby" id="basketball"> 농구
+        </fieldset>
+        <li></li>
+    </ul>
+
+    <h1>기타 태그들</h1>
+    <ul>
+        <li>
+            파일 : <input type="file" multiple>
+        </li>
+
+    </ul>
+    <input type="text" name="" value="숨김 처리">
+    
+    <h1>드롭 다운 목록 select 박스</h1>
+    국적
+    <select name="" id="">
+        <!-- ko : 선택된 경우 서버에 전달되는 값-->
+        <!-- 한국 : 화면에 보여지는 값-->
+        <optgroup label="아시아"
+        <option value="ko">--</option>
+    <option value="ko">selected</option>
+    <option value="ko">중국</option>
+    </optgroup>
+    <optgroup label="아메리카">
+        <option value="en">미국</option>
+    </optgroup>
+    </select>    
+    <hr>
+    <button>요청</button>
+    </fn>
+
+
+
+</body>
+</html>

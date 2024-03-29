@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        img{
+            border: 1px solid red;
+            /* 이미지를 왼쪽, 오른족으로 띄워 글과 함께 표시*/
+            float: left;
+            margin-left: 10px;
+        }
+        .clear{
+            /* float 종료 */
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <h1>이미지와 글자</h1>
+    <h2>float 속성 - 요소를 띄워준다</h2>
+    <img src="images/galic.jpg" alt="마늘">
+    마늘의 효능<br>
+    lorem : 더미 문자열 생성
+    <p class="clear"></p>
+</body>
+</html>
